@@ -4,5 +4,5 @@ SELECT
 FROM
   sample_scores.matches matches
 WHERE
-  match_on between '2022-06-01' and '2022-06-30'
+  match_on >= '2022-06-01'
 ;
