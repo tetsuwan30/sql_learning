@@ -2,7 +2,7 @@
 SELECT
   id
 FROM
-  sample_scores.matches matches
+  sample_scores.matches
 WHERE
   match_on >= '2022-06-01'
 ;
