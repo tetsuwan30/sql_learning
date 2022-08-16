@@ -2,6 +2,7 @@
 * dbt風にテストコードを動的に生成
 * gen-sql.ps
   * 実行ファイル
+  * powershellしかない環境で頑張る
 * target_model.sql
   * テスト対象のモデル
 * target_column.sql
