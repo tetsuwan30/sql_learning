@@ -1,0 +1,12 @@
+$testCaseFilePath = "./unique.sql"
+$testCaseFile = (Get-Content $testCaseFilePath) -as [string[]]
+
+$targetModelFilePath = "./target_model.sql"
+$targetModelFile = (Get-Content $targetModelFilePath) -as [string[]]
+
+$targetColumnFilePath = "target_column.sql"
+$targetColumnFile = (Get-Content $targetColumnFilePath) -as [string[]]
+
+$outputFile = $testCaseFile.replace('%%target_model%%',$targetModelFile).replace('%%target_column%%',$targetColumnFile)
+
+Write-Output $outputFile > ./output.sql
