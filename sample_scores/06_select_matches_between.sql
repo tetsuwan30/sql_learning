@@ -1,8 +1,2 @@
 /* 該当の期間の試合 */
-SELECT
-  id
-FROM
-  sample_scores.matches matches
-WHERE
-  match_on BETWEEN '2022-06-01' and '2022-06-30'
-;
+select id from sample_scores.matches matches where match_on between '2022-06-01' and '2022-06-30'

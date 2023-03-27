@@ -1,11 +1,8 @@
 /* メンバー毎の試合数とスコアの集計 */
-SELECT
-  member_id
-  ,SUM(score) AS score_sum
-  ,COUNT(match_id) AS match_count
-  ,COUNT(DISTINCT match_id) AS match_unique_count
-FROM
-  sample_scores.scores
-GROUP BY
-  member_id
-;
+select
+  member_id,
+  sum(score) as score_sum,
+  count(match_id) as match_count,
+  count(distinct match_id) as match_unique_count
+from sample_scores.scores
+group by member_id
